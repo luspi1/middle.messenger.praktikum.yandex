@@ -1,0 +1,32 @@
+.header-field {
+  margin-bottom: 25px;
+
+  p {
+    @include roboto-medium;
+    font-size: 15px;
+    line-height: 18px;
+    color: #F4CC00;
+    margin-bottom: 10px;
+  }
+
+  input {
+    min-width: 435px;
+    padding: 14px 16px;
+    border: 1px solid #FFFFFF;
+    border-radius: 45px;
+    background: none;
+    @include roboto-medium;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+    outline: none;
+
+    &::placeholder {
+      color: #B1B2B5;
+    }
+
+    &:focus {
+      border: 1px solid #F4CC00;
+    }
+  }
+}

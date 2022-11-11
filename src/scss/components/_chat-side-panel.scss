@@ -1,0 +1,76 @@
+.chat-side-panel {
+  min-width: 330px;
+  background-color: #2B2F37;
+  padding: 20px 0 20px 0;
+  height: 100vh;
+  overflow-y: auto;
+
+  scrollbar-color: #F4CC00 transparent;
+  scrollbar-width: thin;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #16202A;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #F4CC00;
+    border-radius: 50px;
+  }
+
+
+  &__caption {
+    padding-left: 20px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    @include roboto-bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFBFB;
+    display: flex;
+    align-items: center;
+
+    span {
+      margin-left: 10px;
+      display: inline-block;
+      width: 17px;
+      height: 17px;
+      background: #F4CC00;
+      @include roboto-bold;
+      font-size: 10px;
+      line-height: 15px;
+      color: #20232B;
+      border-radius: 50%;
+      text-align: center;
+    }
+
+  }
+
+  &__profile-link {
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFBFB;
+    transition: all .3s;
+
+    &:hover {
+      color: #F4CC00;
+    }
+
+    svg path {
+      fill: #F4CC00;
+    }
+  }
+
+  .contacts-list {
+    margin-top: 50px;
+  }
+
+}

@@ -1,0 +1,32 @@
+.error-block {
+  h1 {
+    text-align: center;
+    @include roboto-bold;
+    font-size: 96px;
+    line-height: 112px;
+    color: #FFFBFB;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 95px;
+      height: 1px;
+      background-color: #F4CC00;
+    }
+  }
+
+  p {
+    @include roboto-regular;
+    font-size: 25px;
+    line-height: 29px;
+    color: #FFFBFB;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+}

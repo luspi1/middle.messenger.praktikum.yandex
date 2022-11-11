@@ -1,0 +1,15 @@
+.avatar {
+  max-width: 130px;
+
+  img {
+    margin-bottom: 20px;
+  }
+
+  p {
+    @include roboto-bold;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFBFB;
+  }
+}

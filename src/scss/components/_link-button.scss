@@ -1,0 +1,26 @@
+.link-button {
+  @include roboto-bold;
+  font-size: 22px;
+  line-height: 26px;
+  color: #F4CC00;
+  border: 1px solid #FFFFFF;
+  border-radius: 45px;
+  padding: 15px 20px;
+  min-width: 435px;
+  text-align: center;
+  display: inline-block;
+  transition: all .3s;
+  &:hover {
+    background-color: #F4CC00;
+    border-color:  #F4CC00;
+    color: #FFFFFF;
+  }
+
+  &.link-button_sm {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 13px;
+    padding: 10px 15px;
+  }
+
+}

@@ -1,0 +1,26 @@
+<html lang="ru">
+{{>head title="Изменить данные"}}
+<body class="change-profile-page">
+<main>
+	{{>profile-back-btn link="profile.hbs"}}
+
+	<div class="container">
+		<form action="#" method="post">
+			{{>change-avatar image-src="./src/img/avatar.png"}}
+
+			<div class="change-profile-page__info">
+				{{>profile-input-line title="Почта" name="email" type="text" value="pochta@yandex.ru"}}
+				{{>profile-input-line title="Логин" name="login" type="text" value="ivanivanov" bg-class="profile-input-line_bg"}}
+				{{>profile-input-line title="Имя" name="first_name" type="text" value="Иван"}}
+				{{>profile-input-line title="Фамилия" name="second_name" type="text" value="Иванов" bg-class="profile-input-line_bg"}}
+				{{>profile-input-line title="Имя в чате" name="display_name" type="text" value="Иван"}}
+				{{>profile-input-line title="Телефон" name="phone" type="text" value="+7 (909) 967 30 30" bg-class="profile-input-line_bg"}}
+			</div>
+
+			{{>link-button label="Сохранить" link="profile.hbs" style="link-button_sm"}}
+		</form>
+	</div>
+</main>
+</body>
+</html>
+

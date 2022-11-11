@@ -1,0 +1,30 @@
+<html lang="ru">
+{{>head title="Профиль"}}
+<body class="profile-page">
+<main>
+	{{>profile-back-btn link="chat-choose.hbs"}}
+
+	<div class="container">
+		<form action="#" method="post">
+			{{>avatar name="Иван" image-src="./src/img/avatar.png"}}
+
+			<div class="profile-page__info">
+				{{>profile-line title="Почта" text="pochta@yandex.ru"}}
+				{{>profile-line title="Логин" text="ivanivanov" bg-class="profile-line_bg"}}
+				{{>profile-line title="Имя" text="Иван"}}
+				{{>profile-line title="Фамилия" text="Иванов" bg-class="profile-line_bg"}}
+				{{>profile-line title="Имя в чате" text="Иван"}}
+				{{>profile-line title="Телефон" text="+7 (909) 967 30 30" bg-class="profile-line_bg"}}
+			</div>
+
+			<div class="profile-page__change-btns">
+				{{>link-button label="Изменить данные" link="change-profile.hbs" style="link-button_sm"}}
+				{{>link-button label="Изменить пароль" link="change-password.hbs" style="link-button_sm"}}
+			</div>
+			{{>close-profile label="Выйти"}}
+		</form>
+	</div>
+</main>
+</body>
+</html>
+

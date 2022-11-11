@@ -1,0 +1,23 @@
+<html lang="ru">
+{{>head title="Чат"}}
+<body class="chat-page">
+<main>
+	<div class="chat-page__container">
+		{{>chat-side-panel}}
+		<div class="chat-page__inner">
+			{{>contact-panel avatar-src="./src/img/contact-avatar.jpg" name="Семён" status="online" label="Online"}}
+
+			<ul class="chat-page__messages">
+				{{>message-item sender="outgoing" text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo." time="10:23"}}
+				{{>message-item sender="incoming" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor" time="14:33"}}
+				{{>message-item sender="incoming" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Excepteur sint occaecat cupidatat non proident, sun" time="19:10"}}
+				{{>message-item sender="outgoing" text="But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I" time="23:11"}}
+				{{>message-item sender="outgoing" text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium beatae cum deserunt, eos eveniet fugit modi obcaecati quod voluptate? Ab assumenda eligendi laborum maxime necessitatibus pariatur tempore ut velit." time="23:16"}}
+			</ul>
+			{{>new-message placeholder="Написать сообщение..."}}
+		</div>
+	</div>
+</main>
+</body>
+</html>
+
