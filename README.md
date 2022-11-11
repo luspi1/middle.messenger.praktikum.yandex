@@ -27,4 +27,4 @@ npm run start
 ## Ссылки
 
 Макет: https://www.figma.com/file/zECvEIaR0xtjoo3p6TYjhy/YaChat?node-id=0%3A2&t=FEWG3ITEbeowVyPa-0
-Netlify: https://inquisitive-taiyaki-dda7cb.netlify.app/
+Netlify: https://cozy-zuccutto-48a52a.netlify.app/
