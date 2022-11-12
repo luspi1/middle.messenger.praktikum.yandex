@@ -1,10 +1,10 @@
 <html lang="ru">
-{{>head title="Регистрация"}}
+{{>head title="Регистрация" style-link="../src/scss/main.scss"}}
 <body class="reg-page">
 <main>
 	<div class="container">
 		{{>main-title label="Регистрация"}}
-		{{>link-button label="Авторизоваться" link="index.hbs"}}
+		{{>link-button label="Авторизоваться" link="../index.hbs"}}
 		<form action="#" method="post">
 			<div class="reg-page__inputs">
 				{{>header-field caption="Почта" type="text" placeholder="pochta@yandex.ru" name="email"}}
@@ -15,7 +15,7 @@
 				{{>header-field caption="Пароль" type="password" name="password"}}
 				{{>header-field caption="Пароль еще раз" type="password" name="password"}}
 			</div>
-			{{>link-button label="Зарегистрироваться" link="profile.hbs"}}
+			{{>custom-button label="Зарегистрироваться" type="submit"}}
 		</form>
 	</div>
 </main>

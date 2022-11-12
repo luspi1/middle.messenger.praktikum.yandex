@@ -1,28 +1,31 @@
 <html lang="ru">
-{{>head title="Авторизация"}}
+{{>head title="Авторизация" style-link="./src/scss/main.scss"}}
 <body class="auth-page">
 <main>
 	<div class="container">
 		{{>main-title label="Вход"}}
-		{{>link-button label="Зарегистрироваться" link="registration.hbs"}}
+		{{>link-button label="Зарегистрироваться" link="./pages/registration.hbs"}}
 		<form action="#" method="post">
 			<div class="auth-page__inputs">
 				{{>header-field caption="Логин" type="text" placeholder="ivanivanov" name="login"}}
 				{{>header-field caption="Пароль" type="password" name="password"}}
 			</div>
-			{{>link-button label="Авторизоваться" link="chat.hbs"}}
+			{{>custom-button label="Авторизоваться" type="submit"}}
 		</form>
-		<div class="all-links">
-			<h2>Ссылки на страницы для проверки:</h2>
-			<a href="registration.hbs">Регистрация</a>
-			<a href="profile.hbs">Профиль</a>
-			<a href="change-profile.hbs">Редактировать профиль</a>
-			<a href="change-password.hbs">Сменить пароль</a>
-			<a href="chat.hbs">Чат</a>
-			<a href="chat-choose.hbs">Выбрать чат</a>
-			<a href="errors-404.hbs">404 ошибка</a>
-			<a href="errors-500.hbs">500 ошибка</a>
-		</div>
+
+		<h2 class="auth-page__links-title">Ссылки на страницы для проверки:</h2>
+		<nav class="all-links">
+			<ul>
+				<li><a href="pages/registration.hbs">Регистрация</a></li>
+				<li><a href="pages/profile.hbs">Профиль</a></li>
+				<li><a href="pages/change-profile.hbs">Редактировать профиль</a></li>
+				<li><a href="pages/change-password.hbs">Сменить пароль</a></li>
+				<li><a href="pages/chat.hbs">Чат</a></li>
+				<li><a href="pages/chat-choose.hbs">Выбрать чат</a></li>
+				<li><a href="pages/errors-404.hbs">404 ошибка</a></li>
+				<li><a href="pages/errors-500.hbs">500 ошибка</a></li>
+			</ul>
+		</nav>
 	</div>
 </main>
 </body>

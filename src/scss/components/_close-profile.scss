@@ -2,9 +2,9 @@
   @include roboto-medium;
   font-size: 13px;
   line-height: 13px;
-  color: #FF0000;
+  color: $red;
   padding: 10px 15px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid $white;
   border-radius: 45px;
   width: 100%;
   display: flex;
@@ -17,8 +17,8 @@
   }
 
   &:hover {
-    background-color: #FF0000;
-    color: #FFFFFF;
-    border: 1px solid #FF0000;
+    background-color: $red;
+    color: $white;
+    border: 1px solid $red;
   }
 }

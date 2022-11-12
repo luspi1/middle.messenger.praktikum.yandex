@@ -18,30 +18,30 @@
 
   &.incoming {
     align-self: flex-start;
-    background-color: #F4CC00;
+    background-color: $tangerine;
     border-radius: 20px 20px 20px 0;
 
     .message-item__text {
-      color: #20232B;
+      color: $dark;
     }
 
     .message-item__time {
-      color: #2B2F37;
+      color: $bg-grey;
     }
   }
 
   &.outgoing {
     align-self: flex-end;
-    background-color: #2B2F37;
+    background-color: $bg-grey;
     border-radius: 20px 20px 0 20px;
-    border: 1px solid #B1B2B5;
+    border: 1px solid $light;
 
     .message-item__text {
-      color: #B1B2B5;
+      color: $light;
     }
 
     .message-item__time {
-      color: #B1B2B5;
+      color: $light;
     }
   }
 }

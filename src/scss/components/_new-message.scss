@@ -4,14 +4,14 @@
   padding: 0 100px 0 70px;
 
   &__submit-input {
-    background: #2B2F37;
+    background: $bg-grey;
     border-radius: 20px;
     margin-right: 30px;
     @include roboto-regular;
     font-size: 20px;
     line-height: 23px;
     padding: 18px 22px;
-    color: #ffffff;
+    color: $white;
     border: none;
     resize: none;
     width: 100%;
@@ -19,11 +19,11 @@
 
 
     &::placeholder {
-      color: #B1B2B5;
+      color: $light;
     }
 
     &:focus {
-      outline: 1px solid #F4CC00;
+      outline: 1px solid $tangerine;
     }
   }
 
@@ -44,7 +44,7 @@
       height: 50px;
       width: 50px;
       border-radius: 50%;
-      background: #F4CC00;
+      background: $tangerine;
       z-index: -1;
     }
     svg path {
@@ -53,7 +53,7 @@
 
     &:hover {
       svg path {
-        fill: #ffffff;
+        fill: $white;
       }
     }
   }

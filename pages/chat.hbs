@@ -1,11 +1,11 @@
 <html lang="ru">
-{{>head title="Чат"}}
+{{>head title="Чат" style-link="../src/scss/main.scss"}}
 <body class="chat-page">
 <main>
 	<div class="chat-page__container">
 		{{>chat-side-panel}}
 		<div class="chat-page__inner">
-			{{>contact-panel avatar-src="./src/img/contact-avatar.jpg" name="Семён" status="online" label="Online"}}
+			{{>contact-panel avatar-src="../src/img/contact-avatar.jpg" name="Семён" status="online" label="Online"}}
 
 			<ul class="chat-page__messages">
 				{{>message-item sender="outgoing" text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo." time="10:23"}}

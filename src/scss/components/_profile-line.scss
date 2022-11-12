@@ -8,12 +8,12 @@
     @include roboto-medium;
     font-size: 13px;
     line-height: 13px;
-    color: #FFFBFB;
+    color: $white;
   }
 
   &.profile-line_bg {
-    background-color: #F4CC00;
-    border-bottom: 1px solid #EAEAEA;
+    background-color: $tangerine;
+    border-bottom: 1px solid $white;
     p {
       color: $dark;
     }

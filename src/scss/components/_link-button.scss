@@ -2,18 +2,19 @@
   @include roboto-bold;
   font-size: 22px;
   line-height: 26px;
-  color: #F4CC00;
-  border: 1px solid #FFFFFF;
+  color: $tangerine;
+  border: 1px solid $white;
   border-radius: 45px;
   padding: 15px 20px;
   min-width: 435px;
   text-align: center;
   display: inline-block;
+  cursor: pointer;
   transition: all .3s;
   &:hover {
-    background-color: #F4CC00;
-    border-color:  #F4CC00;
-    color: #FFFFFF;
+    background-color: $tangerine;
+    border-color:  $tangerine;
+    color: $white;
   }
 
   &.link-button_sm {

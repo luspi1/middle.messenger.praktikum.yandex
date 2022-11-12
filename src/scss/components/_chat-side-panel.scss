@@ -1,11 +1,11 @@
 .chat-side-panel {
   min-width: 330px;
-  background-color: #2B2F37;
+  background-color: $bg-grey;
   padding: 20px 0 20px 0;
   height: 100vh;
   overflow-y: auto;
 
-  scrollbar-color: #F4CC00 transparent;
+  scrollbar-color: $tangerine transparent;
   scrollbar-width: thin;
 
   &::-webkit-scrollbar {
@@ -13,11 +13,11 @@
   }
 
   &::-webkit-scrollbar-track {
-    background: #16202A;
+    background: $bg-dark;
   }
 
   &::-webkit-scrollbar-thumb {
-    background: #F4CC00;
+    background: $tangerine;
     border-radius: 50px;
   }
 
@@ -34,7 +34,7 @@
     @include roboto-bold;
     font-size: 24px;
     line-height: 28px;
-    color: #FFFBFB;
+    color: $white;
     display: flex;
     align-items: center;
 
@@ -43,11 +43,11 @@
       display: inline-block;
       width: 17px;
       height: 17px;
-      background: #F4CC00;
+      background: $tangerine;
       @include roboto-bold;
       font-size: 10px;
       line-height: 15px;
-      color: #20232B;
+      color: $dark;
       border-radius: 50%;
       text-align: center;
     }
@@ -57,15 +57,15 @@
   &__profile-link {
     font-size: 14px;
     line-height: 16px;
-    color: #FFFBFB;
+    color: $white;
     transition: all .3s;
 
     &:hover {
-      color: #F4CC00;
+      color: $tangerine;
     }
 
     svg path {
-      fill: #F4CC00;
+      fill: $tangerine;
     }
   }
 

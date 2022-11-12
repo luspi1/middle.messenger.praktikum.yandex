@@ -5,28 +5,28 @@
     @include roboto-medium;
     font-size: 15px;
     line-height: 18px;
-    color: #F4CC00;
+    color: $tangerine;
     margin-bottom: 10px;
   }
 
   input {
     min-width: 435px;
     padding: 14px 16px;
-    border: 1px solid #FFFFFF;
+    border: 1px solid $white;
     border-radius: 45px;
     background: none;
     @include roboto-medium;
     font-size: 14px;
     line-height: 16px;
-    color: #ffffff;
+    color: $white;
     outline: none;
 
     &::placeholder {
-      color: #B1B2B5;
+      color: $light;
     }
 
     &:focus {
-      border: 1px solid #F4CC00;
+      border: 1px solid $tangerine;
     }
   }
 }

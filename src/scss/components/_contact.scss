@@ -5,18 +5,18 @@
   padding: 25px 10px 25px 20px;
 
   &.selected {
-    background: #16202A;
+    background: $bg-dark;
   }
 
   &__status {
-    background-color: #2B2F37;
+    background-color: $bg-grey;
     width: 8px;
     height: 8px;
 
     border-radius: 50%;
 
     &.online {
-      background-color: #70CC16;
+      background-color: $green;
     }
   }
 
@@ -43,10 +43,10 @@
       bottom: -5px;
       text-align: center;
       border-radius: 50%;
-      background: #F4CC00;
+      background: $tangerine;
       font-size: 10px;
       line-height: 15px;
-      color: #20232B;
+      color: $dark;
 
       &.count_active {
         display: block;
@@ -62,17 +62,17 @@
   &__name {
     font-size: 14px;
     line-height: 16px;
-    color: #FFFBFB;
+    color: $white;
     margin-bottom: 5px;
   }
 
   &__message {
     font-size: 12px;
     line-height: 15px;
-    color: #B1B2B5;
+    color: $light;
 
     span {
-      color: #ffffff;
+      color: $white;
       display: none;
     }
 
@@ -86,7 +86,7 @@
   &__time {
     font-size: 10px;
     line-height: 15px;
-    color: #B1B2B5;
+    color: $light;
   }
 
 
