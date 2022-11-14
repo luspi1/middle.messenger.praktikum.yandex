@@ -1,0 +1,21 @@
+.profile-line {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 15px;
+
+  p {
+    @include roboto-medium;
+    font-size: 13px;
+    line-height: 13px;
+    color: $white;
+  }
+
+  &.profile-line_bg {
+    background-color: $tangerine;
+    border-bottom: 1px solid $white;
+    p {
+      color: $dark;
+    }
+  }
+}

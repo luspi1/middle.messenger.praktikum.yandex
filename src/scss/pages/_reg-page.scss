@@ -1,0 +1,18 @@
+.reg-page {
+  padding: 40px 0;
+  background: $bg-dark url("../img/main-bg.jpg") no-repeat right;
+  background-size: auto 100%;
+
+  .main-title {
+    margin-bottom: 50px;
+  }
+
+  .link-button {
+    margin-bottom: 45px;
+  }
+
+  &__inputs {
+    margin-bottom: 55px;
+  }
+
+}

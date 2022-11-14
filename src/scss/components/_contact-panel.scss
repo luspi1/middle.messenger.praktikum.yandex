@@ -1,0 +1,66 @@
+.contact-panel {
+  min-width: 100%;
+  padding: 20px 100px 20px 20px;
+  border-left: 1px solid $dark;
+  background: $bg-grey;
+  display: flex;
+  align-items: center;
+
+  &__avatar {
+    width: 63px;
+    margin-right: 10px;
+    padding-top: 3%;
+    position: relative;
+
+
+    img {
+      border-radius: 5px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__name {
+    @include roboto-regular;
+    font-size: 20px;
+    line-height: 23px;
+    color: $white;
+    margin-right: 25px;
+  }
+
+  &__status {
+    @include roboto-regular;
+    font-size: 16px;
+    line-height: 19px;
+    color: $light;
+    position: relative;
+    padding-left: 15px;
+    display: none;
+    &.online {
+      display: block;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: $green;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+    }
+  }
+
+  &__menu-btn {
+    margin-left: auto;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+}

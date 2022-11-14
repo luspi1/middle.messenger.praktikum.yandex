@@ -1,0 +1,27 @@
+.link-button {
+  @include roboto-bold;
+  font-size: 22px;
+  line-height: 26px;
+  color: $tangerine;
+  border: 1px solid $white;
+  border-radius: 45px;
+  padding: 15px 20px;
+  min-width: 435px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  transition: all .3s;
+  &:hover {
+    background-color: $tangerine;
+    border-color:  $tangerine;
+    color: $white;
+  }
+
+  &.link-button_sm {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 13px;
+    padding: 10px 15px;
+  }
+
+}

@@ -1,0 +1,33 @@
+<html lang="ru">
+{{>head title="Авторизация" style-link="./src/scss/main.scss"}}
+<body class="auth-page">
+<main>
+	<div class="container">
+		{{>main-title label="Вход"}}
+		{{>link-button label="Зарегистрироваться" link="./pages/registration.hbs"}}
+		<form action="#" method="post">
+			<div class="auth-page__inputs">
+				{{>header-field caption="Логин" type="text" placeholder="ivanivanov" name="login"}}
+				{{>header-field caption="Пароль" type="password" name="password"}}
+			</div>
+			{{>custom-button label="Авторизоваться" type="submit"}}
+		</form>
+
+		<h2 class="auth-page__links-title">Ссылки на страницы для проверки:</h2>
+		<nav class="all-links">
+			<ul>
+				<li><a href="pages/registration.hbs">Регистрация</a></li>
+				<li><a href="pages/profile.hbs">Профиль</a></li>
+				<li><a href="pages/change-profile.hbs">Редактировать профиль</a></li>
+				<li><a href="pages/change-password.hbs">Сменить пароль</a></li>
+				<li><a href="pages/chat.hbs">Чат</a></li>
+				<li><a href="pages/chat-choose.hbs">Выбрать чат</a></li>
+				<li><a href="pages/errors-404.hbs">404 ошибка</a></li>
+				<li><a href="pages/errors-500.hbs">500 ошибка</a></li>
+			</ul>
+		</nav>
+	</div>
+</main>
+</body>
+</html>
+
