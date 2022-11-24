@@ -1,5 +1,6 @@
 import { LoginPage } from './pages/Login'
 
+
 window.addEventListener('DOMContentLoaded', () => {
 	const root = document.querySelector('#app')!;
 
