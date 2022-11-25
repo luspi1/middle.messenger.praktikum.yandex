@@ -13,14 +13,15 @@ export class LoginPage extends Block<LoginPageProps> {
 
 	init() {
 		this.children.button = new Button({
-			label: 'Click me',
+			label: 'Войти',
+			type: 'submit',
 			events: {
-				click: () => console.log('clicked'),
+				click: () => console.log('авторизация прошла успешно'),
 			},
 		});
 	}
 
 	render() {
-		return this.compile(template, this.props);
+		return this.compile(template, {title: this.props.title, button: this.children.button});
 	}
 }

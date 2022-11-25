@@ -12,7 +12,7 @@ class Block<P extends Record<string, any> = any> {
 
 	public id = nanoid(6);
 	protected props: P;
-	public children: Record<string, Block>;
+	protected children: Record<string, Block>;
 	private eventBus: () => EventBus;
 	private _element: HTMLElement | null = null;
 	private _meta: { tagName: string; props: P; };
@@ -74,8 +74,8 @@ class Block<P extends Record<string, any> = any> {
 	}
 
 	_createResources() {
-		const { tagName } = this._meta;
-		this._element = this._createDocumentElement(tagName);
+		// const { tagName } = this._meta;
+		// this._element = this._createDocumentElement(tagName);
 	}
 
 	private _init() {
@@ -100,13 +100,13 @@ class Block<P extends Record<string, any> = any> {
 		Object.values(this.children).forEach(child => child.dispatchComponentDidMount());
 	}
 
-	private _componentDidUpdate(oldProps: P, newProps: P) {
+	private _componentDidUpdate(oldProps: P, newProps: P): void {
 		if (this.componentDidUpdate(oldProps, newProps)) {
 			this.eventBus().emit(Block.EVENTS.FLOW_RENDER);
 		}
 	}
 
-	protected componentDidUpdate(oldProps: P, newProps: P) {
+	protected componentDidUpdate(oldProps: P, newProps: P): boolean {
 		return true;
 	}
 
@@ -125,9 +125,11 @@ class Block<P extends Record<string, any> = any> {
 	private _render() {
 		const fragment = this.render();
 
-		this._element!.innerHTML = '';
+		const newElement = fragment.firstElementChild as HTMLElement
 
-		this._element!.append(fragment);
+		this._element?.replaceWith(newElement)
+
+		this._element = newElement
 
 		this._addEvents();
 	}
@@ -208,3 +210,6 @@ class Block<P extends Record<string, any> = any> {
 }
 
 export default Block;
+
+
+
